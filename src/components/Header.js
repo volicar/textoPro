@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FiMenu, FiX, FiType } from 'react-icons/fi';
+import { FaFlask } from "react-icons/fa";
+
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,8 +15,8 @@ export default function Header() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-white hover:text-blue-400 transition-colors">
-            <FiType className="text-blue-400 me-0" size={22} />
-            <span>exto Pro</span>
+            <FaFlask className="text-xl text-blue-500" />
+            <span className="text-2xl font-bold">TextoLab</span>
           </Link>
 
           {/* Menu Desktop */}
